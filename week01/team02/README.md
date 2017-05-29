@@ -4,8 +4,7 @@
 ## Week 1. Web Architectures
 
 
-![Image of MVC-MVP-MVVM]
-(https://github.com/AndersonChoi/PlalabWebProject/blob/master/week01/team02/img/mvc-mvp-mvvm.png)
+![Image of MVC-MVP-MVVM](https://github.com/AndersonChoi/PlalabWebProject/blob/master/week01/team02/img/mvc-mvp-mvvm.png)
 
 
 ### 1. MVVM

@@ -1,3 +1,68 @@
-# Week01 - team02
-### Web architedctureì— ëŒ€í•´ì„œ ì•Œì•„ë³´ê³  ê³µë¶€í•©ë‹ˆë‹¤.
-* **XXXXí”Œì íŠ¸** : ë¸”ë¼ë¸”ë¼
+#Web study
+
+## Week 2. Web Architectures
+
+### 1. MVVM
+
+- Model-View-**ViewModel**
+- Use cases : Knockout.js
+- John Gossman, Microsoft, 2005 : WPF, Silverlight
+- MVC¿¡¼­ ÄÁÆ®·Ñ·¯°¡ ºä¸ðµ¨·Î ±³Ã¼µÈ ÇüÅÂ
+- ºä¸ðµ¨Àº ºä(UI Layer) ¾Æ·¡¿¡ À§Ä¡ÇÔ
+- ºä¸ðµ¨Àº ºä°¡ ÇÊ¿ä·Î ÇÏ´Â **µ¥ÀÌÅÍ**¿Í **Ä¿¸Çµå °´Ã¼**¸¦ ³ëÃâÇØ ÁÖ±â ¶§¹®¿¡ ºä°¡ ÇÊ¿ä·ÎÇÏ´Â **µ¥ÀÌÅÍ**¿Í **¾×¼Ç**À» ´ã°í ÀÖ´Â ÄÁÅ×ÀÌ³Ê °´Ã¼·Î º¼ ¼öµµ ÀÖÀ½ => Ä¿¸Çµå °´Ã¼? ¾×¼Ç?
+
+#### MVVMÀÇ Â÷º°¼º (vs MVC)
+
+- MVVMÀÇ ºä¸ðµ¨Àº ºä°¡ ÇÊ¿ä·ÎÇÏ´Â **µ¥ÀÌÅÍ**¿Í **Ä¿¸Çµå**¸¦ Á¦°øÇÏ±â À§ÇØ¼­ ¸¸µé¾îÁ³À½
+- ºä¸ðµ¨Àº ÀÌ¸§±×´ë·Î **ºä¸¦ À§ÇÑ ¸ðµ¨**ÀÌ¸ç ºä¸ðµ¨À» ºä¿¡ ¹ÙÀÎµùÇÒ ¶§ °¡Àå °­·ÂÇÕ
+- ºä¸ðµ¨Àº ¿©·¯°¡Áö ºä¸¦ Á¦°øÇÏ´Â ÀÏ¹ÝÀûÀÎ °´Ã¼°¡ ¾Æ´Ï¶ó, °¢ ºä¿¡ ¸ÂÃç¼­ ¸¸µé¾îÁø °ÍÀÓ. µû¶ó¼­ ºä´Â ºä¸ðµ¨¿¡ ´ëÇØ¼­¸¸ ¾Ë°í ÀÖÀ¸¸é µÇ°í ±× ¿ÜÀÇ ¾ÆÅ°ÅØÃ³¿¡ ´ëÇØ¼­´Â ½Å°æ¾²Áö ¾Ê¾Æµµ µÊ
+
+
+- »ç¿ëÀÚ ÀÔ·ÂÀº ºä¿¡¼­ ¹ÞÀ½
+- ºä´Â ºä¸ðµ¨ÀÇ ·¹ÆÛ·±½º¸¦ °¡Áü. µû¶ó¼­ ÇÏ³ªÀÇ ºä¸ðµ¨¿¡¼­ ¿©·¯ ºä¸¦ Áö¿øÇÒ ¼ö ÀÖÀ½
+- ºä¿Í ¸ðµ¨Àº ¼­·Î¿¡ ´ëÇØ ¾ËÁö ¸øÇÔ. ºä¸ðµ¨ÀÌ ¸ðµ¨·ÎºÎÅÍ µ¥ÀÌÅÍ¸¦ °¡Á®¿Í¼­ ºä¿¡°Ô Á¦°øÇÔ.
+- ÀåÁ¡ (vs MVP) : **Ä¿¸Çµå**¿Í **µ¥ÀÌÅÍ¹ÙÀÎµù**À¸·Î ºä¿Í ºä¸ðµ¨ °£ÀÇ ÀÇÁ¸¼º Á¦°Å
+
+
+### 2. MVC
+
+- Model-View-**Controller**
+
+
+- »ç¿ëÀÚ ÀÔ·ÂÀº ÄÁÆ®·Ñ·¯¿¡¼­ ¹ÞÀ½
+- ÇÏ³ªÀÇ ÄÁÆ®·Ñ·¯´Â ¸í·É(operation)¿¡ µû¶ó ¿©·¯ ºä¸¦ ·»´õ¸µ ÇÒ ¼ö ÀÖÀ½
+- ºä´Â ÄÁÆ®·Ñ·¯¿¡ ´ëÇØ ¾ËÁö ¸øÇÔ
+- ÄÁÆ®·Ñ·¯´Â ¸ðµ¨°ú »óÈ£ÀÛ¿ëÇÏ°í, ¸ðµ¨À» ºä·Î ³Ñ±è. µû¶ó¼­ ¸ðµ¨°ú ºä´Â ¼­·Î¸¦ ÀÎÁöÇÔ
+- ´ÜÁ¡ (vs MVP, MVVM) : ºä´Â ¸ðµ¨À» ÀÌ¿ëÇÏ±â ¶§¹®¿¡ ¼­·Î°£ÀÇ ÀÇÁ¸¼ºÀ» ¿Ïº®È÷ ÇÇÇÒ ¼ö ¾øÀ½
+
+#### ºä°¡ ¾÷µ¥ÀÌÆ®µÇ´Â ¹æ½Ä
+ÄÁÆ®·Ñ·¯´Â ºä¸¦ ¼±ÅÃ¸¸ÇÏ°í ¾÷µ¥ÀÌÆ®¸¦ ½ÃÄÑÁÖÁö ¾Ê±â ¶§¹®¿¡, ºä´Â ¸ðµ¨À» ÀÌ¿ëÇÏ¿© ¾÷µ¥ÀÌÆ® ÇÏ°Ô µÊ
+1. ¸ðµ¨ÀÌ ºä¿¡°Ô Notify ÇØÁÖ´Â ¹æ¹ý
+2. ºä¿¡¼­ PollingÀ» ÅëÇØ ¸ðµ¨ÀÇ º¯È­¸¦ ¾Ë¾ÆÃ¤´Â ¹æ¹ý
+3. ±âÅ¸ µîµî
+
+
+### 3. MVP
+
+- Model-View-**Presenter**
+- MVC¿¡¼­ ÄÁÆ®·Ñ·¯°¡ ÇÁ·¹Á¨ÅÍ·Î ±³Ã¼µÈ ÇüÅÂ
+- ºä¿Í ÇÁ·¹Á¨ÅÍ´Â °°Àº ·¹º§¿¡ ÀÖÀ½
+- ÇÁ·¹Á¨ÅÍ´Â ºä¿Í ¸ðµ¨ÀÇ ÀÌº¥Æ®¸¦ ¸ðµÎ ¹ÞÀ¸¸é¼­ µÑ »çÀÌÀÇ »óÈ£ÀÛ¿ëÀ» Á¶Á¤ÇÔ
+
+
+- »ç¿ëÀÚ ÀÔ·ÂÀº ÇÁ·¹Á¨ÅÍ¿¡¼­ ¹ÞÀ½
+- °¢ ºä¿Í ÇÁ·¹Á¨ÅÍ´Â 1:1 ´ëÀÀ °ü°èÀÌ¸ç, ¼­·ÎÀÇ ·¹ÆÛ·±½º¸¦ °¡Áü
+- ºä¿Í ¸ðµ¨Àº ¼­·Î¿¡ ´ëÇØ ¾ËÁö ¸øÇÔ. ÇÁ·¹Á¨ÅÍ´Â ¸ðµ¨ÀÇ ·¹ÆÛ·±½º¸¦ °®±â ¶§¹®¿¡ ºä¿Í ¸ðµ¨ »çÀÌ¿¡¼­ ´Ù¸®¿Í °°Àº ¿ªÇÒÀ» ÇÔ
+- ÀåÁ¡ (vs MVC) : ºä¿Í ¸ðµ¨ÀÇ ¿ÏÀüÇÑ ºÐ¸®
+- ´ÜÁ¡ (vs MVC, MVVM) : ºä¿Í ÇÁ·¹Á¨ÅÍ°¡ 1:1 ´ëÀÀ °ü°è·Î½á ÀÇÁ¸¼ºÀÌ ¸Å¿ì °­ÇÔ
+
+
+### Âü°í
+
+1. WPF¶õ? : (Microsoft) Windows Presentation Foundation. ÀÌ¸¦ ÀÌ¿ëÇØ ½Ã°¢ÀûÀ¸·Î ¶Ù¾î³­ »ç¿ëÀÚ È¯°æÀÇ Windows¿ë µ¥½ºÅ©Åé Å¬¶óÀÌ¾ðÆ® ÀÀ¿ë ÇÁ·Î±×·¥À» ¸¸µé ¼ö ÀÖÀ½
+
+
+### References
+
+- https://blog.outsider.ne.kr/672
+- https://tomyrhymond.wordpress.com/2011/09/16/mvc-mvp-and-mvvm/

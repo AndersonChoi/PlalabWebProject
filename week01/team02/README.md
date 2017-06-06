@@ -77,3 +77,4 @@
 
 - https://blog.outsider.ne.kr/672
 - https://tomyrhymond.wordpress.com/2011/09/16/mvc-mvp-and-mvvm/
+- https://www.tutorialspoint.com/mvvm/mvvm_first_application.htm

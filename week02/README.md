@@ -10,6 +10,7 @@ Java 기반 오픈소스 Web MVC Framework
 ### Struts 2
 
 ![Image of struts2](https://github.com/AndersonChoi/PlalabWebProject/blob/master/week02/team01/struts2Framework.png)
+
 웹에 특화된 프레임워크.
 
 웹 브라우저(User)가 요청하면, 서블릿에서 해당 요청을 받으면 struts.xml 설정에 맞게 알맞은 Action으로 연결함.

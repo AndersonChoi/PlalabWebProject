@@ -19,6 +19,10 @@ Java 기반 오픈소스 Web MVC Framework
 - Many different types of tags are available for the JSP, such as UI tags, Data tags, control tags etc...
 - Struts 2 provides support for themes are templates
 
+- Struts는 2000년 등장. Struts2 = Webwork + Struts.
+- 국내 시장 속에서 Struts와 Spring의 사용률은 3:7 정도. 전자정부 시스템이 Spring으로 되어있기 때문
+
+
 ### SpringMVC
 웹 뿐만 아니라 자바 어플리케이션에도 특화된 프레임워크
 bean의 생성/소멸 등 라이프사이클을 관리하는 컨테이너를 제공
@@ -54,3 +58,5 @@ Spring MVC에서는 validators는 NOT dependent on the Servlet API인 business o
 https://www.slideshare.net/Intertech/spring-mvc-training
 
 http://www.devmanuals.com/tutorials/java/struts/Struts-2-Vs-Spring-MVC.html
+
+http://moondol2525.tistory.com/44

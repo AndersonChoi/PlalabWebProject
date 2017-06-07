@@ -2,12 +2,12 @@
 ### Web architedcture에 대해서 알아보고 실습합니다.
 
 
-### Apache Struts 2 vs. SpringMVC
+## Apache Struts 2 vs. SpringMVC
 
 Java 기반 오픈소스 Web MVC Framework
 
 
-#### Struts 2
+### Struts 2
 
 웹에 특화된 프레임워크.
 
@@ -34,7 +34,7 @@ Java 기반 오픈소스 Web MVC Framework
 
 
 
-#### SpringMVC
+### SpringMVC
 
 웹 뿐만 아니라 자바 어플리케이션에도 특화된 프레임워크
 
@@ -48,9 +48,9 @@ xml 설정 뿐 아니라 자바 기반의 annotation을 활용하여 Java bean�
 
 
 
-#### Diff.
+### Diff.
 
-##### 디자인 측면 : 
+#### 디자인 측면 : 
 
 - Struts 2 Actions are newly instantiated every time a request is made. 필요할 때 새로운 객체를 매번 생성한다.
 - - DI (Dependency Injection, 의존성 주입).. 메모리 낭비를 줄이기 위한 것. 객체를 생성해서 쓰는 것이 아니라 빌려서 쓰는 것
@@ -58,13 +58,13 @@ xml 설정 뿐 아니라 자바 기반의 annotation을 활용하여 Java bean�
 
 - Spring MVC the default behavior is to act as a Singleton (=Controllers are created once and held in memory/shared across all requests) 객체를 한번만 생성한다.
 
-##### 요청 파라미터 핸들링 :
+#### 요청 파라미터 핸들링 :
 
 - struts는 다양한 커스텀태그(Struts specific tags)를 제공함. request parameters가 Action Form fields에 제대로 바인드 되어 있는지 확인하며, show binding/validation errors.
 
 - Spring MVC에서는 one simple bind tag가 모두 핸들함. 따라서 struts에서의 JSP는 더 짧아지고 더 pure 한 HTML content를 담고 있을 것임
 
-##### 구현 및 검증
+#### 구현 및 검증
 
 - Struts는 validate method of an Action Form. clearly hints another form or tools during its validation
 

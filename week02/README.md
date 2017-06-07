@@ -7,6 +7,10 @@
 Java 기반 오픈소스 Web MVC Framework
 
 ### Struts 2
+웹에 특화된 프레임워크
+웹 브라우저(User)가 요청하면, 서블릿에서 해당 요청을 받으면 struts.xml 설정에 맞게 알맞은 Action으로 연결함.
+이 과정에서 인터셉터에서 요청을 처리(보안,파일업로드 등) 후 Action에 넘긴다.
+
 - In Struts 2 MVC components can be configured via struts.xml file
 - Struts 2 action classes are simple POJO class
 - Struts 2 provides the support for Ajax
@@ -16,8 +20,13 @@ Java 기반 오픈소스 Web MVC Framework
 - Struts 2 provides support for themes are templates
 
 ### SpringMVC
+웹 뿐만 아니라 자바 어플리케이션에도 특화된 프레임워크
+bean의 생성/소멸 등 라이프사이클을 관리하는 컨테이너를 제공
+xml 설정 뿐 아니라 자바 기반의 annotation을 활용하여 Java bean을 등록 가능
+
 - using the DispatcherServlet and it supports configurable handler mappings, view resolution, locale, time zone and theme resolution, uploading the files
 - @Controller and @RequestMapping annotations
+
 
 ### Diff.
 - 디자인 측면
@@ -41,5 +50,7 @@ Spring MVC에서는 validators는 NOT dependent on the Servlet API인 business o
 
 
 ## References
+
 https://www.slideshare.net/Intertech/spring-mvc-training
+
 http://www.devmanuals.com/tutorials/java/struts/Struts-2-Vs-Spring-MVC.html

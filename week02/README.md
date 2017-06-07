@@ -7,8 +7,11 @@
 Java 기반 오픈소스 Web MVC Framework
 
 ### Struts 2
-웹에 특화된 프레임워크
+
+웹에 특화된 프레임워크.
+
 웹 브라우저(User)가 요청하면, 서블릿에서 해당 요청을 받으면 struts.xml 설정에 맞게 알맞은 Action으로 연결함.
+
 이 과정에서 인터셉터에서 요청을 처리(보안,파일업로드 등) 후 Action에 넘긴다.
 
 - In Struts 2 MVC components can be configured via struts.xml file

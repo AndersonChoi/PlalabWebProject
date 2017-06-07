@@ -12,8 +12,16 @@ Java 기반 오픈소스 Web MVC Framework
 이 과정에서 인터셉터에서 요청을 처리(보안,파일업로드 등) 후 Action에 넘긴다.
 
 - In Struts 2 MVC components can be configured via struts.xml file
+중앙집중식 처리방식
+
 - Struts 2 action classes are simple POJO class
+POJO(Plain Old Java Object)
+상속, 구현, 오버로딩, 오버라이딩 아무것도 없음. 기초적인 자바 코드를 이용해서 클래스 구현하자는 약속. 정말 쉬움. 
+그러나 하나하나 직접 설정해줘야 하는 단점 있음.
+
 - Struts 2 provides the support for Ajax
+새로고침 없는 데이터 전송 방식. 네이버 실시간 검색어 등 정보를 자동으로 받아와서 띄워주는 것들.
+
 - It can be integrated with the Hibernate, Spring, Tiles, Velocities etc...
 - Many different formats are support for result construction such as JSP, freemarker, Velocity etc...
 - Many different types of tags are available for the JSP, such as UI tags, Data tags, control tags etc...
@@ -36,6 +44,8 @@ xml 설정 뿐 아니라 자바 기반의 annotation을 활용하여 Java bean�
 - 디자인 측면
 
 Struts 2 Actions are newly instantiated every time a request is made. 필요할 때 새로운 객체를 매번 생성한다.
+DI (Dependency Injection, 의존성 주입).. 메모리 낭비를 줄이기 위한 것. 객체를 생성해서 쓰는 것이 아니라 빌려서 쓰는 것
+객체 생성하기 위해선 new가 필요하고, MVC 패턴에선 처음에 컨트롤러 돌아가며 모든 프로퍼티 다 객체 생성해주고 그랬는데 사실 이런 식으로 하면 메모리 낭비 심함.
 
 Spring MVC the default behavior is to act as a Singleton (=Controllers are created once and held in memory/shared across all requests) 객체를 한번만 생성한다.
 

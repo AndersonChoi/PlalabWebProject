@@ -10,26 +10,23 @@
 ### 1. MVVM
 
 - Model-View-**ViewModel**
+- 제안 : John Gossman, Microsoft, 2005 : WPF, Silverlight
 - 사용자 입력은 뷰에서 받음
-- 뷰는 뷰모델의 레퍼런스를 가짐. 따라서 하나의 뷰모델에서 여러 뷰를 지원할 수 있음
+- 각 뷰는 뷰모델의 레퍼런스를 가짐. 따라서 뷰모델은 뷰에 대해 알지 못함
 - 뷰와 모델은 서로에 대해 알지 못함. 뷰모델이 모델로부터 데이터를 가져와서 뷰에게 제공함.
-- 장점 (vs MVP) : **커맨드**와 **데이터바인딩**으로 뷰와 뷰모델 간의 의존성 제거
-
-
-#### 정리 필요
-
-- Use cases : Knockout.js
-- John Gossman, Microsoft, 2005 : WPF, Silverlight
-- MVC에서 컨트롤러가 뷰모델로 교체된 형태
-- 뷰모델은 뷰(UI Layer) 아래에 위치함
-- 뷰모델은 뷰가 필요로 하는 **데이터**와 **커맨드 객체**를 노출해 주기 때문에 뷰가 필요로하는 **데이터**와 **액션**을 담고 있는 컨테이너 객체로 볼 수도 있음 => 커맨드 객체? 액션?
-
-
-#### MVVM의 차별성 (vs MVC)
-
-- MVVM의 뷰모델은 뷰가 필요로하는 **데이터**와 **커맨드**를 제공하기 위해서 만들어졌음
-- 뷰모델은 이름그대로 **뷰를 위한 모델**이며 뷰모델을 뷰에 바인딩할 때 가장 강력합
+- 장점 : **커맨드**와 **데이터바인딩**으로 뷰와 뷰모델 간의 의존성 제거 <span style="color:red">=> 뷰모델은 뷰를 추상화 한 것이기 때문에 플랫폼 독립적이고 다양한 플랫폼에서 재사용될 수 있음. 뷰모델 인스턴스는 언제든지 즉시 생성될 수 있기 때문에 테스트케이스를 통해 요구사항을 이른 시점에 검증할 수 있으며 테스트 주도 개발(TDD) 도입도 쉽다.</span>
+    - <span style="color:red">커맨드 : 모델의 행위를 실행</span>
+    - <span style="color:red">데이터바인딩 : 추상화된 뷰와 물리적인 뷰를 연결해 줄 수단. 뷰와 뷰모델의 상태를 동기화해 줄 구성요소. 데이터 바인딩으로 인해 뷰모델의 상태가 변경되면 뷰의 상태가 함께 변경됨, 그리고 그 역이 보장됨</span>
 - 뷰모델은 여러가지 뷰를 제공하는 일반적인 객체가 아니라, 각 뷰에 맞춰서 만들어진 것임. 따라서 뷰는 뷰모델에 대해서만 알고 있으면 되고 그 외의 아키텍처에 대해서는 신경쓰지 않아도 됨
+- 단점
+    - <span style="color:red">MVVM 패턴은 Microsoft UI 기술의 풍부한 지원이 있었기에 만들어질 수 있었음. 반대로 생각해보면 **비 Microsoft 기술에서 MVVM 패턴을 구현하기 위해서는 프로그래머들이 직접 준비해야할 것들이 많음**</span>
+    - <span style="color:red">간단한 UI만 필요한 경우 overspec</span>
+    - <span style="color:red">반대로 너무 복잡한 UI가 필요하면 뷰모델이 매우 복잡해짐</span>
+    - <span style="color:red">데이터 바인딩이 복잡해지면 디버깅이 어려워짐</span>
+
+
+![](https://github.com/AndersonChoi/PlalabWebProject/blob/master/week01/team02/img/MVVM_class_interaction.gif)
+
 
 
 ### 2. MVC
@@ -78,3 +75,4 @@
 - https://blog.outsider.ne.kr/672
 - https://tomyrhymond.wordpress.com/2011/09/16/mvc-mvp-and-mvvm/
 - https://www.tutorialspoint.com/mvvm/mvvm_first_application.htm
+- https://justhackem.wordpress.com/2017/03/05/mvvm-architectural-pattern/
